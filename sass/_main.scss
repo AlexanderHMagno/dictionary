@@ -1,0 +1,45 @@
+body{
+text-align: center;
+font-family: 'Questrial', sans-serif;
+
+}
+
+
+h1,h2{
+    font-family: 'Abril Fatface', cursive;
+}
+
+header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(44, 4, 189);
+    height: 100px;
+    width: 100%;
+    color:white;
+
+    h1{
+        margin-right:20px};
+}
+.answer{
+
+    width: 60%;
+    height:auto;
+    text-align: center;
+    border:1px solid black;
+    
+margin:auto;
+    h2{
+        font-size:30px;
+        color:rgb(6, 6, 119);
+        padding: 20px;
+    }
+
+    p{
+        margin:auto;
+        width: 60%;
+        padding: 20px;
+        text-align: left;
+    }
+}
+
