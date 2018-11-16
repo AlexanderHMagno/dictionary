@@ -51,7 +51,7 @@ $.ajax({
    let image_show = picData.webformatURL;
   console.log(image_show)
    
-    $(".img_answer").append("<img src=\""+image_show+"\" width=\"100%\">")
+    $(".img_answer").append("<img src=\""+image_show+"\"class=\"crhono_image\">")
     
     
   })

@@ -9,13 +9,14 @@ transition: background-image 4s linear;;
 
 
 h1,h2{
-    font-family: 'Abril Fatface', cursive;
+    
     font-size: 2rem;
     font-weight: bold;
     color:white;
 }
 
 header{
+
     display:flex;
     flex-direction: column;
     justify-content: space-around;
@@ -26,11 +27,25 @@ header{
 
     h1{
         margin-right:20px};
+        font-family: 'Permanent Marker', cursive;
 }
 
+.submit{
+    border-radius: 20%;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 75px;
+}
 
 .main_container{
 
+    display:grid;
     position: relative;
 }
 .answer{
@@ -64,8 +79,18 @@ header{
     border:1px solid black;
     margin:auto;
     overflow: hidden;
- 
-    }
 
+   
+    }
+ 
+    
+
+}
+img.crhono_image {
+    width: 100%;
+
+    @include desktop{
+        width: 25%;
+    }
 }
 
