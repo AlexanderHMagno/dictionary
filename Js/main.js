@@ -6,6 +6,10 @@ $(function(){
 
 $(".submit").on("click",function(e){
 e.preventDefault();
+
+
+$("body").css('background-image',"linear-gradient(to right, #0f1214 0%, #0c2030 100%)");
+
 let word = $(".search").val()
 
 let url = "https://www.dictionaryapi.com/api/v3/references/learners/json/"+word;
@@ -27,6 +31,7 @@ $.ajax({
     })
   });
 
+  
 
   var url_image = "https://pixabay.com/api/";
   url_image += '?' + $.param({

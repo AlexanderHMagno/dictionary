@@ -51,7 +51,9 @@ body {
   background-image: -webkit-gradient(linear, left top, right top, from(#243949), to(#517fa4));
   background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
   font-size: 16px;
-  color: black; }
+  color: black;
+  -webkit-transition: background-image 4s linear;
+  transition: background-image 4s linear; }
 
 h1, h2 {
   font-family: 'Abril Fatface', cursive;
@@ -69,7 +71,8 @@ header {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 200px;
+  height: 150px;
+  margin-top: 50px;
   width: 100%; }
   header h1 {
     margin-right: 20px; }
