@@ -28,6 +28,7 @@ header{
     h1{
         margin-right:20px};
         font-family: 'Permanent Marker', cursive;
+        text-transform: uppercase;
 }
 
 .submit{
@@ -45,14 +46,23 @@ form{
 
 .main_container{
 
-    display:grid;
+    
     position: relative;
+
+    @include desktop { 
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    }
 }
 .answer{
     width: 100%;
     height:auto;
     text-align: center;
     margin:auto;
+
+    @include desktop {
+        margin: inherit;
+    }
     
 
     
@@ -88,6 +98,7 @@ form{
 }
 img.crhono_image {
     width: 100%;
+    height: 200px;
 
     @include desktop{
         width: 25%;
