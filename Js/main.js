@@ -1,6 +1,8 @@
 
 $(function(){
 
+ 
+
 
 $(".submit").on("click",function(e){
 e.preventDefault();
@@ -20,15 +22,54 @@ $.ajax({
     $.each(value.shortdef,function(key,data){
       number++
       $(".answer").append("<p>"+number+". "+data+"</p>")
-      console.log(data)
-      $(".search").val("")
+     
+      
     })
   });
+
+
+  var url_image = "https://pixabay.com/api/";
+  url_image += '?' + $.param({
+  'key': "10695978-de9c60160cd39affb68c9830d",
+  'q': word,
+  'image_type': "photo"
+  
+  });
+  $.ajax({
+  url: url_image,
+  method: 'GET',
+  }).done(function(img_search) {
+    $(".img_answer").html("");
+  
+  $.each(img_search.hits,function(key,picData){
+    
+   let image_show = picData.webformatURL;
+  console.log(image_show)
+   
+    $(".img_answer").append("<img src=\""+image_show+"\" width=\"100%\">")
+    
+    
+  })
+  }).fail(function(err) {
+  throw err;
+  });
+  
+
  }).fail(function(err) {
   throw err;
 });
 
+
+
 });
 
    
-    })
+
+
+  
+  
+  
+
+
+
+ })
