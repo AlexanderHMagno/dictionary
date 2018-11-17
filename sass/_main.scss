@@ -16,23 +16,29 @@ h1,h2{
 }
 
 header{
-
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 150px;
-    margin-top:50px;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin:20px 0;
     width: 100%;
     
-
-    h1{
-        margin-right:20px};
-        font-family: 'Permanent Marker', cursive;
-        text-transform: uppercase;
-}
+    img.logo_info {
+        width: 150;
+    }
 
 .submit{
-    border-radius: 20%;
+    box-shadow:inset 0px 1px 0px 0px #97c4fe;
+    border-radius:6px;
+	border:1px solid #337fed;
+    display:inline-block;
+    background-color:#3d94f6;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1570cd;
 }
 
 form{
@@ -44,6 +50,13 @@ form{
     height: 75px;
 }
 
+.menu-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+}
 .main_container{
 
     
@@ -51,7 +64,7 @@ form{
 
     @include desktop { 
     display:grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 3fr 20px;
     }
 }
 .answer{
@@ -64,11 +77,15 @@ form{
         margin: inherit;
     }
     
+    .logo_info{
+        width: 200px;
+    }
 
     
     h2{
         font-size:30px;
          padding: 10px;
+         text-transform: uppercase;
     }
 
     p{
